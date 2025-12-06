@@ -1,6 +1,11 @@
 <?php
 include '../config/config.php';
 
+if (isLoggedIn()) {
+    header("Location: ../index.php");
+    exit();
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nom = trim($_POST['nom']);
     $email = trim($_POST['email']);
