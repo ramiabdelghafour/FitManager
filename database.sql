@@ -43,6 +43,9 @@ CREATE TABLE cours_equipements (
     UNIQUE KEY unique_cours_equipement (cours_id, equipement_id)
 );
 
+INSERT INTO utilisateurs (nom, email, password) VALUES 
+('Abdelghafour', 'abdelghafour@gmail.com', 'abdelghafour');
+
 INSERT INTO cours (nom, categorie, date_cours, heure, duree_minutes, max_participants, user_id) VALUES
 ('Yoga du matin', 'Yoga', '2025-01-10', '08:00:00', 60, 15, 1),
 ('Cardio intense', 'Cardio', '2025-01-11', '18:00:00', 45, 20, 1),

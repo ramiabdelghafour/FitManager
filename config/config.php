@@ -13,8 +13,6 @@ try {
         die("Erreur de connexion : " . $conn->connect_error);
     }
     
-    $conn->set_charset("utf8mb4");
-    
 } catch (Exception $e) {
     die("Erreur : " . $e->getMessage());
 }
@@ -25,7 +23,7 @@ function isLoggedIn() {
 
 function requireLogin() {
     if (!isLoggedIn()) {
-        header("Location: login.php");
+        header("Location: auth/login.php");
         exit();
     }
 }
