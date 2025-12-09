@@ -4,8 +4,8 @@ USE fitmanager;
 CREATE TABLE utilisateurs (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
-    email VARCHAR(150) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
     date_creation DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
