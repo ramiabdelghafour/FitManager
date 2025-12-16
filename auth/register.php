@@ -80,18 +80,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <form method="POST" action="">
             <div class="form-group">
                 <label for="nom">Nom complet</label>
-                <?php 
-                $nom_value = isset($_POST['nom']) ? $_POST['nom'] : '';
-                echo '<input type="text" id="nom" name="nom" value="' . $nom_value . '" required>';
-                ?>
+                <input type="text" id="nom" name="nom" required>
             </div>
             
             <div class="form-group">
                 <label for="email">Email</label>
-                <?php 
-                $email_value = isset($_POST['email']) ? $_POST['email'] : '';
-                echo '<input type="email" id="email" name="email" value="' . $email_value . '" required>';
-                ?>
+                <input type="email" id="email" name="email" required>
             </div>
             
             <div class="form-group">
